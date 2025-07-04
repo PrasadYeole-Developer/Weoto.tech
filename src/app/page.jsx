@@ -41,9 +41,11 @@ const Home = () => {
 
     lenis.on("scroll", ScrollTrigger.update);
     ScrollTrigger.defaults({ scroller: document.body });
+    ScrollTrigger.refresh();
 
     return () => {
       lenis.destroy();
+      ScrollTrigger.kill();
     };
   }, []);
 
@@ -57,19 +59,13 @@ const Home = () => {
           scrub: true,
         },
       })
-      .fromTo(h1Ref.current, { scale: 1 }, { scale: 2, color: "rosybrown" });
-  });
+      .fromTo(h1Ref.current, { scale: 1 }, { scale: 2 });
+  }, []);
 
   return (
-    <div>
+    <main>
       <div className="w-full h-screen bg-black"></div>
-      <div className="w-full h-screen bg-gray-400 flex items-center justify-center">
-        <h1 ref={h1Ref} className="text-4xl">
-          Text
-        </h1>
-      </div>
-      <div className="w-full h-screen bg-gray-800"></div>
-    </div>
+    </main>
   );
 };
 

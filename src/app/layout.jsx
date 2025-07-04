@@ -16,7 +16,7 @@ export const metadata = {
   description:
     "Weoto is company formed by four enthusiasts to serve businesses with their technical expertise. At Weoto, we are on a mission to help companies develop competitiveness and agility using the software. Since 2017, Weoto has been delivering exceptional software development services. We have identified great problem solvers with passion and drive, and they are part of our team now. We deliver end-to-end software development, quality assurance and support solutions to clients.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/weoto-favicon.ico",
   },
 };
 
