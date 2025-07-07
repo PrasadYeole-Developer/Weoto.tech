@@ -2,14 +2,12 @@
 import React, { useEffect, useRef } from "react";
 import "lenis/dist/lenis.css";
 import Lenis from "lenis";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import Hero from "./components/Hero";
 
 const Home = () => {
-  const h1Ref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
-
   useEffect(() => {
     const lenis = new Lenis({
       smooth: true,
@@ -45,26 +43,14 @@ const Home = () => {
 
     return () => {
       lenis.destroy();
-      ScrollTrigger.kill();
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
-  useGSAP(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: h1Ref.current,
-          start: "top center",
-          end: "bottom top",
-          scrub: true,
-        },
-      })
-      .fromTo(h1Ref.current, { scale: 1 }, { scale: 2 });
-  }, []);
-
   return (
-    <main>
-      <div className="w-full h-screen bg-black"></div>
+    <main className="w-full min-h-screen select-none">
+      <Hero />
+      <div className="w-full h-screen bg-white"></div>
     </main>
   );
 };
