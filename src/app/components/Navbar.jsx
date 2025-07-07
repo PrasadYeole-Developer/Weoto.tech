@@ -1,19 +1,40 @@
+"use client";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 
 const Navbar = () => {
+  const h2 = useRef();
+  const links = useRef();
+  const navTL = gsap.timeline();
+  useGSAP(() => {
+    navTL.from(h2.current, {
+      opacity: 0,
+      yPercent: -380,
+      duration: 1,
+      ease: "power3.inOut"
+    },"nav").from(links.current,{
+      opacity: 0,
+      duration: 1,
+      ease: "power3.in"
+    },"0.3")
+  }, []);
   return (
-    <nav className="w-full px-[7rem] py-[0.7rem] flex items-center justify-between fixed text-[#020023] bg-white">
+    <nav className="w-full px-[7rem] py-[0.7rem] flex items-center justify-between fixed text-[#020023] bg-white overflow-hidden">
       <div className="left">
         <h2
+          ref={h2}
           onClick={() => (window.location.href = "/")}
           className="scroll-m-20 border-b border-[#020023] pb-2 text-3xl font-semibold tracking-tight first:mt-0 cursor-pointer"
         >
           WEOTO{" "}
         </h2>
       </div>
-      <div className="right flex gap-[2.2rem] text-sm font-semibold font-sans items-center">
+      <div
+        ref={links}
+        className="right flex gap-[2.2rem] text-sm font-semibold font-sans items-center"
+      >
         <Link href="/home" className="uppercase hover:text-[#004AAD]">
           Home
         </Link>
