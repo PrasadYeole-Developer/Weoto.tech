@@ -9,16 +9,26 @@ const Navbar = () => {
   const links = useRef();
   const navTL = gsap.timeline();
   useGSAP(() => {
-    navTL.from(h2.current, {
-      opacity: 0,
-      yPercent: -380,
-      duration: 1,
-      ease: "power3.inOut"
-    },"nav").from(links.current,{
-      opacity: 0,
-      duration: 1,
-      ease: "power3.in"
-    },"0.3")
+    navTL
+      .from(
+        h2.current,
+        {
+          opacity: 0,
+          yPercent: -380,
+          duration: 0.8,
+          ease: "power3.inOut",
+        },
+        "nav"
+      )
+      .from(
+        links.current,
+        {
+          opacity: 0,
+          duration: 0.7,
+          ease: "power3.in",
+        },
+        "0.4"
+      );
   }, []);
   return (
     <nav className="w-full px-[7rem] py-[0.7rem] flex items-center justify-between fixed text-[#020023] bg-white overflow-hidden">

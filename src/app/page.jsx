@@ -5,6 +5,7 @@ import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Hero from "./components/Hero";
+import Weoto from "./components/Weoto";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -14,6 +15,8 @@ const Home = () => {
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
+
+    window.lenis = lenis;
 
     function raf(time) {
       lenis.raf(time);
@@ -50,7 +53,7 @@ const Home = () => {
   return (
     <main className="w-full min-h-screen select-none">
       <Hero />
-      <div className="w-full h-screen bg-white"></div>
+      <Weoto />
     </main>
   );
 };
