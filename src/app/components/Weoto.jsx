@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
+import Edges from "./Edges";
 
 const Weoto = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -19,8 +20,8 @@ const Weoto = () => {
       })
       .fromTo(
         benefits.current,
-        { opacity: 0, scale: 0.8 },
-        { opacity: 1, scale: 1.2 }
+        { opacity: 0, yPercent: -200, duration: 2.5, ease: "expo.out" },
+        { opacity: 1, yPercent: 0 }
       );
   }, []);
 
@@ -42,12 +43,15 @@ const Weoto = () => {
           We develop innovative and creative products and services that provide
           total communication and information solutions.
         </p>
-        <h3
-          ref={benefits}
-          className="scroll-m-20 text-4xl font-semibold tracking-tight text-center mt-10"
-        >
-          Benefits of working with Us{" "}
-        </h3>
+        <div className="overflow-hidden mt-8">
+          <h3
+            ref={benefits}
+            className="scroll-m-20 text-4xl font-semibold tracking-tight text-center mt-12"
+          >
+            Experience the Weoto Edge{" "}
+          </h3>
+        </div>
+        <Edges />
       </div>
       <div className="white w-full h-screen bg-white"></div>
     </section>

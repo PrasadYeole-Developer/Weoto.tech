@@ -46,7 +46,7 @@ const Navbar = () => {
         className="right flex gap-[2.2rem] text-sm font-semibold font-sans items-center"
       >
         <Link
-          href="/home"
+          href="/"
           className="uppercase hover:text-[#004AAD] transition-colors duration-200"
         >
           Home
