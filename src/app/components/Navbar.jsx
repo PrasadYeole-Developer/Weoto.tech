@@ -45,19 +45,34 @@ const Navbar = () => {
         ref={links}
         className="right flex gap-[2.2rem] text-sm font-semibold font-sans items-center"
       >
-        <Link href="/home" className="uppercase hover:text-[#004AAD]">
+        <Link
+          href="/home"
+          className="uppercase hover:text-[#004AAD] transition-colors duration-200"
+        >
           Home
         </Link>
-        <Link href="/services" className="uppercase hover:text-[#004AAD]">
+        <Link
+          href="/services"
+          className="uppercase hover:text-[#004AAD] transition-colors duration-200"
+        >
           Services
         </Link>
-        <Link href="/work" className="uppercase hover:text-[#004AAD]">
+        <Link
+          href="/work"
+          className="uppercase hover:text-[#004AAD] transition-colors duration-200"
+        >
           Our Work
         </Link>
-        <Link href="/technologies" className="uppercase hover:text-[#004AAD]">
+        <Link
+          href="/technologies"
+          className="uppercase hover:text-[#004AAD] transition-colors duration-200"
+        >
           Technologies
         </Link>
-        <Link href="/about" className="uppercase hover:text-[#004AAD]">
+        <Link
+          href="/about"
+          className="uppercase hover:text-[#004AAD] transition-colors duration-200"
+        >
           About Us
         </Link>
         <Link
