@@ -33,7 +33,7 @@ const Weoto = () => {
       <div className="blue w-full h-[45vh] bg-[#004AAD]"></div>
       <div
         ref={benefitsContainer}
-        className="absolute w-[86%] px-[6rem] py-[8rem] h-screen bg-white top-[12%]"
+        className="absolute w-[86%] px-[6rem] py-[8rem] h-screen bg-white top-[6%]"
       >
         <h2 className="scroll-m-20 pb-2 text-6xl font-semibold tracking-tight first:mt-0 text-center">
           We only <span className="text-[#004AAD]">Create</span> what we really
@@ -53,7 +53,7 @@ const Weoto = () => {
         </div>
         <Edges />
       </div>
-      <div className="white w-full h-screen bg-white"></div>
+      <div className="white w-full h-[250vh] bg-white"></div>
     </section>
   );
 };
