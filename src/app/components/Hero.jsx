@@ -24,7 +24,7 @@ const Hero = () => {
             window.lenis.scrollTo(target);
           }
         }}
-        className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-20 h-20 border-2 border-white rounded-full flex items-center justify-center text-white hover:scale-105 transition duration-300 cursor-pointer"
+        className="absolute animate-bounce bottom-6 left-[50%] w-20 h-20 border-2 border-white rounded-full flex items-center justify-center text-white hover:scale-140 transition duration-300 cursor-pointer"
         aria-label="Scroll Down"
       >
         <svg

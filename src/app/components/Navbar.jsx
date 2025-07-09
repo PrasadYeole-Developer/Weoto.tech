@@ -76,7 +76,7 @@ const Navbar = () => {
           About Us
         </Link>
         <Link
-          href="contact"
+          href="/contact"
           className="border border-[#020023] ml-5 py-2.5 px-5 cursor-pointer hover:bg-[#020023] hover:text-white transition-colors duration-300"
         >
           CONTACT US
