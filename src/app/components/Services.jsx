@@ -1,9 +1,31 @@
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 
 const Services = () => {
-  const services = [
+  gsap.registerPlugin(ScrollTrigger);
+  const services = useRef();
+  const servicesContainer = useRef();
+  useGSAP(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: servicesContainer.current,
+          start: "top 70%",
+          end: "bottom top",
+          scrub: true,
+        },
+      })
+      .fromTo(
+        services.current,
+        { opacity: 0, yPercent: -200, duration: 0.5, ease: "expo.out" },
+        { opacity: 2, yPercent: 0 }
+      );
+  }, []);
+  const servicesData = [
     {
       title: "Web Development",
       description:
@@ -48,43 +70,46 @@ const Services = () => {
     },
   ];
   return (
-    <div className="w-full bg-blue-100 min-h-screen">
+    <div className="w-full bg-blue-100 min-h-screen" ref={servicesContainer}>
       <div className="container mx-auto px-4 py-12">
-        <h3 className="scroll-m-20 text-4xl font-semibold tracking-tight text-center mt-8 mb-12">
-          Our Services
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
-            <Link
+        <div className="overflow-hidden">
+          <h3
+            ref={services}
+            className="scroll-m-20 text-4xl font-semibold tracking-tight text-center mt-12 mb-6"
+          >
+            Our Services
+          </h3>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          {servicesData.map((service) => (
+            <div
               key={service.title}
-              href={service.route || "#"}
               className="group transition-all duration-300 h-full flex"
             >
-              <div className="bg-white text-[#020023] p-8 rounded shadow-md flex flex-col items-start h-full min-h-[500px] w-full">
+              <Link
+                href={service.route}
+                className="bg-white text-[#020023] p-8 rounded shadow-none flex flex-col items-start h-full min-h-[500px] w-full transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl"
+              >
                 <Image
                   src={service.image}
                   alt={service.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-64 object-cover rounded-xl mb-6 group-hover:scale-105 transition-all duration-300"
+                  width={400}
+                  height={250}
+                  className="w-full h-40 object-contain rounded-xl mb-12 transition-all duration-300"
                 />
                 <h4 className="text-3xl font-semibold mb-4 text-left w-full">
                   {service.title}
                 </h4>
                 <p className="mb-4 flex-1 text-left w-full">
-                  <b>{service.companyName}</b>
-                  {service.description.replace(service.companyName, "")}
+                  {service.description}
                 </p>
                 <div className="w-full flex justify-start mt-auto">
-                  <Link
-                    href={service.route || "#"}
-                    className="underline underline-offset-2 text-lg hover:underline-offset-3"
-                  >
+                  <span className="underline underline-offset-2 text-lg hover:underline-offset-3 text-[#222222]">
                     Read More
-                  </Link>
+                  </span>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
       </div>

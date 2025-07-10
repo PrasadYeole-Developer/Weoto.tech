@@ -21,7 +21,7 @@ const Weoto = () => {
       .fromTo(
         benefits.current,
         { opacity: 0, yPercent: -200, duration: 2.5, ease: "expo.out" },
-        { opacity: 1, yPercent: 0 }
+        { opacity: 2, yPercent: 0 }
       );
   }, []);
 
