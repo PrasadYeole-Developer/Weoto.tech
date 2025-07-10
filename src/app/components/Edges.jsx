@@ -10,7 +10,7 @@ const Edges = () => {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,
-          start: "top 95%",
+          start: "top 90%",
           end: "bottom 60%",
           scrub: true,
         },
