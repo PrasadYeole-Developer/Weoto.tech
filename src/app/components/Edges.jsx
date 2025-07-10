@@ -48,7 +48,7 @@ const Edges = () => {
           />
         </div>
 
-        <div className="edge-right w-full md:w-1/2 text-center md:text-left">
+        <div className="edge-right w-full md:w-1/2 text-center md:text-left lg:mr-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-[#004AAD] mb-8">
             We build a tech delivery roadmap to align with your goals
           </h2>
@@ -69,7 +69,7 @@ const Edges = () => {
           />
         </div>
 
-        <div className="edge-right w-full md:w-1/2 text-center md:text-left">
+        <div className="edge-right w-full md:w-1/2 text-center md:text-left lg:mr-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-[#004AAD] mb-8">
             Seamless collaboration from idea to execution
           </h2>
@@ -90,7 +90,7 @@ const Edges = () => {
           />
         </div>
 
-        <div className="edge-right w-full md:w-1/2 text-center md:text-left">
+        <div className="edge-right w-full md:w-1/2 text-center md:text-left lg:mr-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-[#004AAD] mb-8">
             Future-ready solutions that scale with you
           </h2>

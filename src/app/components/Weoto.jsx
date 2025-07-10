@@ -20,7 +20,7 @@ const Weoto = () => {
       })
       .fromTo(
         benefits.current,
-        { opacity: 0, yPercent: -200, duration: 2.5, ease: "expo.out" },
+        { opacity: 0, yPercent: -170, duration: 2.5, ease: "expo.out" },
         { opacity: 2, yPercent: 0 }
       );
   }, []);
@@ -33,7 +33,7 @@ const Weoto = () => {
       <div className="blue w-full h-[45vh] bg-[#004AAD]"></div>
       <div
         ref={benefitsContainer}
-        className="absolute w-[86%] px-[6rem] py-[8rem] h-screen bg-white top-[6%]"
+        className="w-[86%] px-[0rem] py-[8rem] bg-white mt-[-25vh] z-10 shadow-lg"
       >
         <h2 className="scroll-m-20 pb-2 text-6xl font-semibold tracking-tight first:mt-0 text-center">
           We only <span className="text-[#004AAD]">Create</span> what we really
@@ -53,7 +53,7 @@ const Weoto = () => {
         </div>
         <Edges />
       </div>
-      <div className="white w-full h-[250vh] bg-white"></div>
+      <div className="w-full h-[10vh] bg-white"></div>
     </section>
   );
 };
