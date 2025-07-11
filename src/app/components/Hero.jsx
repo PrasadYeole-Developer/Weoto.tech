@@ -19,10 +19,7 @@ const Hero = () => {
       <button
         ref={btnRef}
         onClick={() => {
-          const target = document.querySelector("#weoto");
-          if (target && window.lenis) {
-            window.lenis.scrollTo(target);
-          }
+          window.lenis.scrollTo("#weoto");
         }}
         className="absolute animate-bounce bottom-6 left-[48%] w-20 h-20 border-2 border-white rounded-full flex items-center justify-center text-white hover:scale-140 transition duration-300 cursor-pointer"
         aria-label="Scroll Down"

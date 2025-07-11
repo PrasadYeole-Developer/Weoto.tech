@@ -70,20 +70,6 @@ const Edges = () => {
   return (
     <div className="min-h-screen bg-white py-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            How We{" "}
-            <span className="text-transparent bg-clip-text bg-[#004AAD]">
-              Transform
-            </span>{" "}
-            Ideas
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover our proven process for turning your vision into reality
-            with cutting-edge technology and seamless execution.
-          </p>
-        </div>
-
         <div className="space-y-16">
           {cardData.map((card, index) => (
             <div key={index} className="relative">
@@ -104,7 +90,7 @@ const Edges = () => {
 
                 <div className="edge-right w-full lg:w-1/2 text-center lg:text-left">
                   <div className="space-y-6">
-                    <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight">
+                    <h2 className="text-3xl md:text-4xl xl:text-5xl font-semibold text-gray-900 leading-tight">
                       {card.title}
                     </h2>
 
