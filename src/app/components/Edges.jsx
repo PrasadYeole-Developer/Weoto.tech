@@ -8,7 +8,7 @@ const Edges = () => {
 
   useGSAP(() => {
     const Edges = gsap.timeline();
-    gsap.utils.toArray(".edge-left").forEach((el, index) => {
+    gsap.utils.toArray(".edge-left").forEach((el) => {
       Edges.from(el, {
         scrollTrigger: {
           trigger: el,
@@ -25,7 +25,7 @@ const Edges = () => {
       });
     });
 
-    gsap.utils.toArray(".edge-right").forEach((el, index) => {
+    gsap.utils.toArray(".edge-right").forEach((el) => {
       Edges.from(el, {
         scrollTrigger: {
           trigger: el,
