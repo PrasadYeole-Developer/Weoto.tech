@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/all";
 import Hero from "./components/Hero";
 import Weoto from "./components/Weoto";
 import Services from "./components/Services";
+import Footer from "./components/Footer";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -56,6 +57,7 @@ const Home = () => {
       <Hero />
       <Weoto />
       <Services />
+      <Footer />
     </main>
   );
 };
