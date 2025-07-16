@@ -33,7 +33,7 @@ const Weoto = () => {
       <div className="blue w-full h-[45vh] bg-[#004AAD]"></div>
       <div
         ref={benefitsContainer}
-        className="w-[86%] px-[0rem] py-[8rem] bg-white mt-[-25vh] z-10 shadow-lg"
+        className="w-[86%] px-[0rem] py-[8rem] bg-white mt-[-25vh] z-[100] shadow-lg"
       >
         <h2 className="scroll-m-20 pb-2 text-6xl font-semibold tracking-tight first:mt-0 text-center">
           We only <span className="text-[#004AAD]">Create</span> what we really

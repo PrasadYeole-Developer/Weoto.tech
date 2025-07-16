@@ -45,9 +45,6 @@ const Hero = () => {
         className="absolute inset-0 bg-[url('/company_image.webp')] bg-contain bg-center bg-fixed opacity-18 pointer-events-none z-0"
       />
 
-      <div className="relative z-10">
-        <Navbar />
-      </div>
     </div>
   );
 };
