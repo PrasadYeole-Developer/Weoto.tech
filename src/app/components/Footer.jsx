@@ -1,140 +1,131 @@
+"use client";
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#222222] text-white py-12 px-4 md:px-8 w-full text-serif">
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-            Weoto
-          </h2>
-          <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-4xl mx-auto">
-            Weoto is company formed by four enthusiasts to serve businesses with
-            their technical expertise. At Weoto, we are on a mission to help
-            companies develop competitiveness and agility using the software.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-16">
+    <footer
+      className="w-full text-white font-sans bg-[#020023]"
+    >
+      <div className="max-w-7xl mx-auto px-4 md:px-10 py-12 md:pt-16 md:pb-10">
+        <div className="grid gap-10 md:grid-cols-4">
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6 tracking-wide">
+            <h2 className="text-2xl font-bold tracking-widest mb-3 uppercase">
+              WEOTO
+            </h2>
+            <p className="text-gray-200 text-sm leading-relaxed mb-4">
+              Weoto is a company formed by four enthusiasts to serve businesses
+              with their technical expertise. We aim to help companies gain
+              competitiveness and agility through software solutions.
+            </p>
+            <div className="flex gap-5 items-center mt-3">
+              <a
+                href="https://www.instagram.com/weoto/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <Image
+                  src="/instagram.svg"
+                  alt="Instagram"
+                  width={26}
+                  height={26}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/weoto-technologies-private-limited/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Image
+                  src="/linkedin.svg"
+                  alt="LinkedIn"
+                  width={36}
+                  height={36}
+                />
+              </a>
+              <a
+                href="https://x.com/WeotoTechlabs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <Image
+                  src="/twitter.svg"
+                  alt="Twitter"
+                  width={23}
+                  height={23}
+                />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-base font-bold mb-4 tracking-wide uppercase">
               Quick Links
             </h3>
-            <ul className="space-y-2 md:space-y-4">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Our Work
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Technologies
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Contact Us
-                </a>
-              </li>
+            <ul className="space-y-2 text-sm">
+              {[
+                { label: "Home", href: "/" },
+                { label: "About", href: "/about" },
+                { label: "Services", href: "/services" },
+                { label: "Industries", href: "/industries" },
+                { label: "Insights", href: "/insights" },
+                { label: "Why Weoto", href: "/why-weoto" },
+                { label: "Contact Us", href: "/contact" },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    className="text-gray-200 hover:text-white transition-colors duration-200"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6 tracking-wide">
+            <h3 className="text-base font-bold mb-4 tracking-wide uppercase">
               Services
             </h3>
-            <ul className="space-y-2 md:space-y-4">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Web Development
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Mobile Development
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  E-Commerce
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  DevOps
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Blockchain
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Artificial Intelligence and Machine Learning
-                </a>
-              </li>
+            <ul className="space-y-2 text-sm">
+              {[
+                { label: "Custom Software Development", href: "/services/custom-software" },
+                { label: "B2B eCommerce Applications", href: "/services/b2b-ecommerce" },
+                { label: "Supply Chain Management Solutions", href: "/services/supply-chain" },
+                { label: "SaaS & ERP Platforms", href: "/services/saas-erp" },
+                { label: "Mobile App Development", href: "/services/mobile-apps" },
+                { label: "Cloud & DevOps Services", href: "/services/cloud-devops" },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    className="text-gray-200 hover:text-white transition-colors duration-200"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6 tracking-wide">
+            <h3 className="text-base font-bold mb-4 tracking-wide uppercase">
               Contact Us
             </h3>
-            <div className="text-gray-300 text-sm leading-relaxed space-y-2">
-              <p className="font-semibold text-white">
+            <div className="text-sm text-gray-200 space-y-1">
+              <p className="font-bold text-white">
                 Weoto Technologies Private Limited
               </p>
-              <p>First floor, Padmanabh, Godawari Nagar,</p>
-              <p>Pujya Sri Sri Ravishankar Marg, Kalpataru Nagar,</p>
+              <p>First floor, Padmanabh, Godawari Nagar</p>
+              <p>Pujya Sri Sri Ravishankar Marg, Kalpataru Nagar</p>
               <p>Nashik, Maharashtra 422001</p>
-
-              <div className="pt-4 space-y-2">
+              <div className="mt-2 space-y-1">
                 <p>
-                  <span className="font-semibold">Phone:</span>{" "}
+                  <strong>Phone:</strong>{" "}
                   <a
                     href="tel:+918625888782"
                     className="hover:text-white transition-colors duration-200"
@@ -143,7 +134,7 @@ const Footer = () => {
                   </a>
                 </p>
                 <p>
-                  <span className="font-semibold">Email:</span>{" "}
+                  <strong>Email:</strong>{" "}
                   <a
                     href="mailto:contact@weoto.tech"
                     className="hover:text-white transition-colors duration-200"
@@ -154,48 +145,11 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          <div className="socials flex flex-col gap-[1.5rem] items-center pt-10">
-              <a
-                href="https://www.instagram.com/weoto/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/instagram.svg"
-                  alt="Instagram"
-                  className="w-[3.6rem] h-[3.6rem]"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/weoto-technologies-private-limited/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/linkedin.svg"
-                  alt="LinkedIn"
-                  className="w-[4.4rem] h-[4.4rem]"
-                />
-              </a>
-              <a
-                href="https://x.com/WeotoTechlabs/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/twitter.svg"
-                  alt="Twitter"
-                  className="w-[3.2rem] h-[3.2rem]"
-                ></img>
-              </a>
-            </div>
         </div>
 
         <div className="border-t border-white mt-10 pt-6 text-center">
-          <span className="text-white text-xs md:text-sm mb-2 md:mb-0">
-            © Copyright <strong>Weoto Technologies Pvt Ltd.</strong> All Rights
-            Reserved
+          <span className="text-sm text-white">
+            © {new Date().getFullYear()} <strong>Weoto Technologies Pvt. Ltd.</strong> All rights reserved.
           </span>
         </div>
       </div>
