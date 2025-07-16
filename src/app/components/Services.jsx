@@ -44,52 +44,52 @@ const Services = () => {
 
   const servicesData = [
     {
-      title: "Web Development",
+      title: "B2B Ecommerce",
       description:
-        "Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications, electronic businesses, and social network services and many more..",
+        "Robust B2B ecommerce solutions tailored for seamless business transactions, scalable catalogs, and custom workflows.",
       image:
-        "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=800",
-      route: "/services/web-dev",
+        "https://images.pexels.com/photos/6347727/pexels-photo-6347727.jpeg?auto=compress&cs=tinysrgb&w=800",
+      route: "/services/b2b-ecommerce",
     },
     {
-      title: "Mobile App Development",
+      title: "Custom Software",
       description:
-        "We develop mobile apps for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones.",
+        "End-to-end custom software development to solve unique business challenges and drive digital transformation.",
       image:
-        "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=800",
-      route: "/services/mobile-dev",
+        "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+      route: "/services/custom-software",
     },
     {
-      title: "E-commerce",
+      title: "Mobile App",
       description:
-        "Our eCommerce website development services help deliver a comprehensive and effective e-business strategy. Making your business available online is crucial to your business development such as, highly convenience, wide exposure, global customer etc.",
+        "Design and development of high-performance mobile applications for iOS and Android to engage your customers anywhere.",
       image:
-        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      route: "/services/e-commerce",
+        "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
+      route: "/services/mobile-app",
     },
     {
-      title: "DevOps",
+      title: "SaaS ERP",
       description:
-        "DevOps is a set of practices that combines software development and IT operations. It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.",
+        "Cloud-based ERP solutions for streamlined operations, real-time analytics, and scalable business management.",
       image:
-        "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800",
-      route: "/services/devops",
+        "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800",
+      route: "/services/saas-erp",
     },
     {
-      title: "Blockchain",
+      title: "Cloud Services",
       description:
-        "Whether you want to develop peer-to-peer decentralized applications, enterprise dApps or self-executing smart contracts, we will help you deliver custom blockchain development services.",
+        "Comprehensive cloud and DevOps services for secure, scalable, and efficient infrastructure management.",
       image:
-        "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=800",
-      route: "/services/blockchain",
+        "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=800",
+      route: "/services/cloud-devops",
     },
     {
-      title: "AI and Machine Learning",
+      title: "Supply Chain",
       description:
-        'While machine learning is based on the idea that machines should be able to learn and adapt through experience, AI refers to a broader idea where machines can execute tasks "smartly." Artificial Intelligence applies machine learning, deep learning and other techniques to solve actual problems.',
+        "Advanced supply chain solutions to optimize logistics, inventory, and end-to-end visibility for your business.",
       image:
-        "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      route: "/services/machine-learning",
+        "https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=800",
+      route: "/services/supply-chain",
     },
   ];
 
