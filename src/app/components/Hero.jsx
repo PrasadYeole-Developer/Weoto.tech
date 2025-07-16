@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef } from "react";
-import Navbar from "./Navbar";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -44,7 +43,6 @@ const Hero = () => {
         ref={image}
         className="absolute inset-0 bg-[url('/company_image.webp')] bg-contain bg-center bg-fixed opacity-18 pointer-events-none z-0"
       />
-
     </div>
   );
 };

@@ -72,7 +72,7 @@ const Footer = () => {
                 { label: "Services", href: "/services" },
                 { label: "Industries", href: "/industries" },
                 { label: "Insights", href: "/insights" },
-                { label: "Why Weoto", href: "/why-weoto" },
+                { label: "Why Weoto", href: "/why-us" },
                 { label: "Contact Us", href: "/contact" },
               ].map(({ label, href }) => (
                 <li key={label}>

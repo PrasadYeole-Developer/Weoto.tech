@@ -1,9 +1,11 @@
-import React from 'react'
+"use client";
+import React from "react";
+import Services from "../components/Services";
+import useLenisScroll from "../components/useLenisScroll";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+const ServicesPage = () => {
+  useLenisScroll(); 
+  return <Services />;
+};
 
-export default page
+export default ServicesPage;

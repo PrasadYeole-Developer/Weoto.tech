@@ -1,11 +1,10 @@
 "use client";
 import React from "react";
-import Weoto from "../components/Weoto";
 import useLenisScroll from "../components/useLenisScroll";
 
-const WhyUs = () => {
+const LenisProvider = ({ children }) => {
   useLenisScroll();
-  return <Weoto />;
+  return <>{children}</>;
 };
 
-export default WhyUs;
+export default LenisProvider;
