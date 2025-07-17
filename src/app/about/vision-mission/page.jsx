@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const page = () => {
+const VisionMission = () => {
   return (
-    <div>page</div>
+    <div>
+      <h1>Vision and Mission</h1>
+    </div>
   )
 }
 
-export default page
+export default VisionMission;

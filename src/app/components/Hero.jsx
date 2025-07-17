@@ -41,7 +41,7 @@ const Hero = () => {
 
       <div
         ref={image}
-        className="absolute inset-0 bg-[url('/company_image.webp')] bg-contain bg-center bg-fixed opacity-18 pointer-events-none z-0"
+        className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&w=1500&q=80')] bg-cover bg-no-repeat bg-center bg-fixed opacity-20 pointer-events-none z-0"
       />
     </div>
   );

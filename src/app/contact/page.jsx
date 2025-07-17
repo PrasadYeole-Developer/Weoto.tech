@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
-const page = () => {
+const ContactPage = () => {
   return (
-    <div>page</div>
-  )
-}
+    <>
+      <Navbar />
+      <Contact />
+      <Footer />
+    </>
+  );
+};
 
-export default page
+export default ContactPage;

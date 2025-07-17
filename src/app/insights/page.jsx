@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Insights from "../components/Insights";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
-const page = () => {
+const InsightsPage = () => {
   return (
-    <div>page</div>
-  )
-}
+    <>
+      <Navbar />
+      <Insights />
+      <Footer />
+    </>
+  );
+};
 
-export default page
+export default InsightsPage;

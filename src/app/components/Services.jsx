@@ -99,7 +99,7 @@ const Services = () => {
         <div className="overflow-hidden">
           <h3
             ref={services}
-            className="scroll-m-20 text-4xl font-semibold tracking-tight text-center mt-12 mb-6"
+            className="scroll-m-20 text-4xl font-semibold tracking-tight text-center mt-20 md:mt-12 mb-6"
           >
             Our Services
           </h3>

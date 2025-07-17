@@ -1,7 +1,16 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Industries from "../components/Industries";
 
-const Industries = () => {
-  return <div>Industries</div>;
+const IndustriesPage = () => {
+  return (
+    <>
+      <Navbar />
+      <Industries />
+      <Footer />
+    </>
+  );
 };
 
-export default Industries;
+export default IndustriesPage;

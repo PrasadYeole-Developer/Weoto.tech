@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-10 py-12 md:pt-16 md:pb-10">
         <div className="grid gap-10 md:grid-cols-4">
           <div>
-            <h2 className="text-2xl font-bold tracking-widest mb-3 uppercase">
+            <h2 className="text-2xl font-bold tracking-widest mb-3 uppercase border-b border-white pb-2 w-fit">
               WEOTO
             </h2>
             <p className="text-gray-200 text-sm leading-relaxed mb-4">
