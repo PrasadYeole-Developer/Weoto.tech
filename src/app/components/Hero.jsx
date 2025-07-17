@@ -15,29 +15,31 @@ const Hero = () => {
   }, []);
   return (
     <div className="w-full h-screen relative bg-[#020023] text-white overflow-hidden">
-      <button
-        ref={btnRef}
-        onClick={() => {
-          window.lenis.scrollTo("#weoto");
-        }}
-        className="absolute animate-bounce bottom-6 left-[48%] w-20 h-20 border-2 border-white rounded-full flex items-center justify-center text-white hover:scale-140 transition duration-300 cursor-pointer"
-        aria-label="Scroll Down"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth="2"
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex justify-center items-center w-full pointer-events-none z-10">
+        <button
+          ref={btnRef}
+          onClick={() => {
+            window.lenis.scrollTo("#weoto");
+          }}
+          className="animate-bounce w-20 h-20 border-2 border-white rounded-full flex items-center justify-center text-white hover:scale-140 transition duration-300 cursor-pointer pointer-events-auto"
+          aria-label="Scroll Down"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-      </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+      </div>
 
       <div
         ref={image}
