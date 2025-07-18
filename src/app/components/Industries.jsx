@@ -5,7 +5,7 @@ const Industries = () => {
     <section className="w-full min-h-screen bg-[#DBEAFE] flex items-center justify-center py-16">
       <div className="max-w-5xl w-full mx-auto px-4 md:px-8 flex flex-col gap-10">
         <div className="flex flex-col items-center text-center gap-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-2 text-[#004AAD]">Industries We Serve</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-2 mt-12 text-[#004AAD]">Industries We Serve</h2>
           <p className="text-gray-700 text-base md:text-lg max-w-2xl">
             Weoto empowers businesses across diverse industries with tailored software solutions, helping them gain competitiveness and agility in a rapidly evolving digital landscape.
           </p>

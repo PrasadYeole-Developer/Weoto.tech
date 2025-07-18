@@ -5,7 +5,7 @@ const Insights = () => {
     <section className="w-full min-h-screen bg-[#DBEAFE] flex items-center justify-center py-16">
       <div className="max-w-5xl w-full mx-auto px-4 md:px-8 flex flex-col gap-10">
         <div className="flex flex-col items-center text-center gap-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 text-[#004AAD]">Insights</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 mt-12 text-[#004AAD]">Insights</h1>
           <p className="text-gray-700 text-base md:text-lg max-w-2xl">
             Explore our latest thoughts, trends, and expertise in technology, business, and digital transformation. Stay ahead with Weoto's curated insights for forward-thinking organizations.
           </p>
