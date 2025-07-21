@@ -4,13 +4,14 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer
-      className="w-full text-white font-sans bg-[#020023]"
-    >
+    <footer className="w-full text-white font-sans bg-[#020023] select-none">
       <div className="max-w-7xl mx-auto px-4 md:px-10 py-12 md:pt-16 md:pb-10">
         <div className="grid gap-10 md:grid-cols-4">
           <div>
-            <h2 className="text-2xl font-bold tracking-widest mb-3 uppercase border-b border-white pb-2 w-fit">
+            <h2
+              className="text-2xl font-bold tracking-widest mb-3 uppercase border-b border-white pb-2 w-fit cursor-pointer"
+              onClick={() => (window.location.href = "/")}
+            >
               WEOTO
             </h2>
             <p className="text-gray-200 text-sm leading-relaxed mb-4">
@@ -62,7 +63,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-base font-bold mb-4 tracking-wide uppercase">
+            <h3 className="text-base font-bold mb-4 tracking-wider uppercase">
               Quick Links
             </h3>
             <ul className="space-y-2 text-sm">
@@ -88,17 +89,32 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-base font-bold mb-4 tracking-wide uppercase">
+            <h3 className="text-base font-bold mb-4 tracking-wider uppercase">
               Services
             </h3>
             <ul className="space-y-2 text-sm">
               {[
-                { label: "Custom Software Development", href: "/services/custom-software" },
-                { label: "B2B eCommerce Applications", href: "/services/b2b-ecommerce" },
-                { label: "Supply Chain Management Solutions", href: "/services/supply-chain" },
+                {
+                  label: "Custom Software Development",
+                  href: "/services/custom-software",
+                },
+                {
+                  label: "B2B eCommerce Applications",
+                  href: "/services/b2b-ecommerce",
+                },
+                {
+                  label: "Supply Chain Management Solutions",
+                  href: "/services/supply-chain",
+                },
                 { label: "SaaS & ERP Platforms", href: "/services/saas-erp" },
-                { label: "Mobile App Development", href: "/services/mobile-apps" },
-                { label: "Cloud & DevOps Services", href: "/services/cloud-devops" },
+                {
+                  label: "Mobile App Development",
+                  href: "/services/mobile-app",
+                },
+                {
+                  label: "Cloud & DevOps Services",
+                  href: "/services/cloud-devops",
+                },
               ].map(({ label, href }) => (
                 <li key={label}>
                   <a
@@ -113,7 +129,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-base font-bold mb-4 tracking-wide uppercase">
+            <h3 className="text-base font-bold mb-4 tracking-wider uppercase">
               Contact Us
             </h3>
             <div className="text-sm text-gray-200 space-y-1">
@@ -149,7 +165,8 @@ const Footer = () => {
 
         <div className="border-t border-white mt-10 pt-6 text-center">
           <span className="text-sm text-white">
-            © {new Date().getFullYear()} <strong>Weoto Technologies Pvt. Ltd.</strong> All rights reserved.
+            © {new Date().getFullYear()}{" "}
+            <strong>Weoto Technologies Pvt. Ltd.</strong> All rights reserved.
           </span>
         </div>
       </div>
