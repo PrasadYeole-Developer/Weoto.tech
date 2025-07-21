@@ -6,16 +6,26 @@ import gsap from "gsap";
 const Hero = () => {
   const image = useRef();
   const btnRef = useRef();
+  const heroText = useRef();
   useGSAP(() => {
     gsap.from(image.current, {
       opacity: 0,
       duration: 1,
       delay: 1,
     });
+    gsap.from(heroText.current, {
+      y: 50,
+      opacity: 0,
+      duration: 0.5,
+      delay: 0.8,
+    });
   }, []);
   return (
     <div className="w-full h-screen relative bg-[#020023] text-white overflow-hidden">
-      <div className="div w-full min-h-screen flex flex-col items-center justify-center gap-4 px-4 sm:px-8">
+      <div
+        className="div w-full min-h-screen flex flex-col items-center justify-center gap-4 px-4 sm:px-8 overflow-hidden"
+        ref={heroText}
+      >
         <h1 className="scroll-m-20 text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold tracking-tight text-balance px-2 sm:px-8 leading-tight">
           We Create Experiences <br className="hidden sm:block" />
           that Resonate.
