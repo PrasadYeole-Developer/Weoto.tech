@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from '@/app/components/Navbar'
 import Footer from '@/app/components/Footer'
+import useLenisScroll from '@/app/components/useLenisScroll'
 
 const SaaSERP = () => {
+  useLenisScroll();
   return (
     <>
     <Navbar />
