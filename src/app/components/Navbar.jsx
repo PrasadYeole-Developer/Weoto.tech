@@ -203,14 +203,14 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
-        <div className="mt-12 flex justify-center">
-          <Link
-            href="/contact"
-            className="text-lg font-extrabold uppercase py-3 px-8 rounded bg-[#004AAD] text-white shadow-lg active:scale-[0.98] transition-all duration-200"
-          >
-            Contact Us
-          </Link>
-        </div>
+          <div className="mt-12 flex justify-center">
+            <Link
+              href="/contact"
+              className="text-lg font-extrabold uppercase py-3 px-8 rounded bg-[#004AAD] text-white shadow-lg active:scale-[0.98] transition-all duration-200"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -367,7 +367,7 @@ const Navbar = () => {
         </NavigationMenu>
         <Link
           href="/contact"
-          className="border border-[#020023] ml-5 py-2.5 px-5 cursor-pointer hover:bg-[#020023] hover:text-white transition-colors duration-300"
+          className="border rounded-xs border-[#020023] ml-5 py-2.5 px-5 cursor-pointer bg-[#020023] text-white active:scale-[0.98] hover:bg-white hover:text-[#020023] transition-all duration-300 uppercase"
         >
           CONTACT US
         </Link>
