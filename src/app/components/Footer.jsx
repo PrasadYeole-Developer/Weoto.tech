@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -134,7 +135,14 @@ const Footer = () => {
             </h3>
             <div className="text-sm text-gray-200 space-y-1">
               <p className="font-bold text-white">
-                Weoto Technologies Private Limited
+                <Link
+                  href="https://maps.app.goo.gl/6AvyS67MHfC3egks8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  Weoto Technologies Private Limited
+                </Link>
               </p>
               <p>First floor, Padmanabh, Godawari Nagar</p>
               <p>Pujya Sri Sri Ravishankar Marg, Kalpataru Nagar</p>
@@ -164,10 +172,15 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white mt-10 pt-6 text-center">
-          <span className="text-sm text-white">
+          <Link
+            href="https://maps.app.goo.gl/6AvyS67MHfC3egks8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-white"
+          >
             © {new Date().getFullYear()}{" "}
             <strong>Weoto Technologies Pvt. Ltd.</strong> All rights reserved.
-          </span>
+          </Link>
         </div>
       </div>
     </footer>
