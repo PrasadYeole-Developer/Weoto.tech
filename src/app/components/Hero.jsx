@@ -15,6 +15,16 @@ const Hero = () => {
   }, []);
   return (
     <div className="w-full h-screen relative bg-[#020023] text-white overflow-hidden">
+      <div className="div w-full min-h-screen flex flex-col items-center justify-center gap-4 px-4 sm:px-8">
+        <h1 className="scroll-m-20 text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold tracking-tight text-balance px-2 sm:px-8 leading-tight">
+          We Create Experiences <br className="hidden sm:block" />
+          that Resonate.
+        </h1>
+        <p className="leading-7 mt-2 text-base text-center">
+          We are a team of developers who are passionate about creating
+          innovative solutions for our clients.
+        </p>
+      </div>
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex justify-center items-center w-full pointer-events-none z-10">
         <button
           ref={btnRef}
