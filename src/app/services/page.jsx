@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import Services from "../components/Services";
+import Services from "../pages/Services";
 import useLenisScroll from "../components/useLenisScroll";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const ServicesPage = () => {
-  useLenisScroll(); 
+  useLenisScroll();
   return (
     <>
       <Navbar />

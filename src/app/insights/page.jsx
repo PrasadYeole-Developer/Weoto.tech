@@ -1,5 +1,5 @@
 import React from "react";
-import Insights from "../components/Insights";
+import Insights from "../pages/Insights";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 

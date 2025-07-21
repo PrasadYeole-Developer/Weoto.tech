@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Hero from "./components/Hero";
 import Weoto from "./components/Weoto";
-import Services from "./components/Services";
+import Services from "./pages/Services";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
