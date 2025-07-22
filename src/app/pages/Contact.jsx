@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "remixicon/fonts/remixicon.css";
 import { useForm } from "react-hook-form";
-
+import { toast } from "sonner";
 
 const Contact = () => {
   const {
@@ -17,7 +17,9 @@ const Contact = () => {
   const onSubmit = (data) => {
     console.log(data);
     reset();
-    
+    toast("Message sent successfully!", {
+      description: "We'll be in touch shortly.",
+    });
   };
   useLenisScroll();
   return (

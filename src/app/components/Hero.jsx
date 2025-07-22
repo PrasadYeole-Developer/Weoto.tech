@@ -28,7 +28,7 @@ const Hero = () => {
       >
         <h1 className="scroll-m-20 text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold tracking-tight text-balance px-2 sm:px-8 leading-tight">
           We Create Experiences <br className="hidden sm:block" />
-          that Resonate.
+          that Resonate
         </h1>
         <p className="leading-7 mt-2 text-base text-center">
           We are a team of developers who are passionate about creating

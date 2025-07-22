@@ -120,9 +120,9 @@ const Navbar = () => {
       <div className="right flex lg:hidden z-[100]">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
-            <HiX className="text-2xl" />
+            <HiX className="text-2xl cursor-pointer" />
           ) : (
-            <HiMenu className="text-2xl" />
+            <HiMenu className="text-2xl cursor-pointer" />
           )}
         </button>
       </div>
