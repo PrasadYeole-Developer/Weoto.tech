@@ -107,7 +107,7 @@ const Navbar = () => {
     }
   }, [isOpen]);
   return (
-    <nav className="w-full px-12 lg:px-[7rem] py-[0.7rem] flex items-center justify-between fixed text-[#020023] bg-white overflow z-[100]">
+    <nav className="w-full px-12 lg:px-[7rem] py-[0.7rem] flex items-center justify-between fixed text-[#020023] bg-white overflow z-[100] select-none">
       <div className="left z-[100]">
         <h2
           ref={h2}
