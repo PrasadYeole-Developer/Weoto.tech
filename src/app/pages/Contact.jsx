@@ -6,6 +6,7 @@ import "remixicon/fonts/remixicon.css";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import useLenisScroll from "../components/useLenisScroll";
+import CalendlySection from "../components/Calendly";
 
 const Contact = () => {
   useLenisScroll();
@@ -29,10 +30,10 @@ const Contact = () => {
     <>
       <Navbar />
       <section className="w-full min-h-screen bg-[#DBEAFE] text-[#020023] flex flex-col items-center justify-center py-8 pt-16 gap-2 select-none">
-        <h2 className="scroll-m-20 text-4xl font-bold tracking-tight text-center mt-24 md:mt-12">
+        <h2 className="scroll-m-20 text-3xl md:text-4xl font-bold tracking-tight text-center mt-24 md:mt-12">
           Get in Touch
         </h2>
-        <p className="leading-6 mt-2 text-sm font-medium text-center">
+        <p className="leading-6 mt-2 text-center text-base md:text-md font-medium text-gray-700 ">
           Have a project in mind or want to collaborate? <br />
           Reach out to us and our team will get back to you as soon as possible.
         </p>
@@ -227,10 +228,12 @@ const Contact = () => {
           </div>
         </form>
       </section>
-      <section className="w-full min-h-screen bg-[#020023] text-white flex items-center justify-center py-8 select-none"></section>
+      <section className="w-full min-h-screen bg-[#020023] text-white flex items-center justify-center relative z-100 select-none">
+        <CalendlySection />
+      </section>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7499.62238540614!2d73.806194!3d19.974441!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb4b70922d3b%3A0xeb2c3d42950e4216!2sWeoto%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1753088924760!5m2!1sen!2sin"
-        className="border-0 w-full h-[40vh] md:h-[50vh] lg:h-[70vh]"
+        className="border-0 w-full h-[30vh] md:h-[40vh] lg:h-[60vh]"
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
