@@ -54,13 +54,15 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="w-full min-h-screen select-none">
-      <Navbar />
-      <Hero />
-      <Weoto />
-      <Services />
-      <Footer />
-    </main>
+    <>
+      <main className="w-full min-h-screen select-none">
+        <Navbar />
+        <Hero />
+        <Weoto />
+        <Services />
+        <Footer />
+      </main>
+    </>
   );
 };
 

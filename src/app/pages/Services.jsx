@@ -94,7 +94,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="w-full bg-blue-100 min-h-screen" ref={servicesContainer}>
+    <div className="w-full bg-[#DBEAFE] min-h-screen" ref={servicesContainer}>
       <div className="container mx-auto px-4 py-12">
         <div className="overflow-hidden">
           <h3

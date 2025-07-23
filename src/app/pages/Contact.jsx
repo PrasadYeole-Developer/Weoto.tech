@@ -1,13 +1,14 @@
 "use client";
-import React, { useState } from "react";
-import useLenisScroll from "../components/useLenisScroll";
+import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "remixicon/fonts/remixicon.css";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
+import useLenisScroll from "../components/useLenisScroll";
 
 const Contact = () => {
+  useLenisScroll();
   const {
     register,
     handleSubmit,
@@ -21,7 +22,6 @@ const Contact = () => {
       description: "We'll be in touch shortly.",
     });
   };
-  useLenisScroll();
   return (
     <>
       <Navbar />
@@ -123,7 +123,6 @@ const Contact = () => {
                 type="tel"
                 required
                 placeholder="+91 XXXXXXXXXX"
-                pattern="^\+?\d{10,15}$"
                 className="w-full border-0 px-2 py-2 text-base bg-[#DBEAFE] font-medium focus:outline-none focus:border-black transition placeholder-gray-500 placeholder:font-normal rounded"
                 aria-label="Phone"
                 autoComplete="tel"

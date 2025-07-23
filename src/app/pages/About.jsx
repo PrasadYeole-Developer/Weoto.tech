@@ -2,7 +2,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import useLenisScroll from "../components/useLenisScroll";
+import useLenisScroll from "../components/useLenisScroll";  
 
 const About = () => {
   useLenisScroll();
