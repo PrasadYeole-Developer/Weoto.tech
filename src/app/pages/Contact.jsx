@@ -16,6 +16,9 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
+    if (data.honeypot) {
+      return;
+    }
     console.log(data);
     reset();
     toast("Message sent successfully!", {
@@ -206,6 +209,13 @@ const Contact = () => {
               </p>
             )}
           </div>
+          <input
+            type="text"
+            name="honeypot"
+            className="hidden"
+            {...register("honeypot")}
+          />
+
           <div className="flex w-full mt-2">
             <button
               type="submit"
