@@ -43,7 +43,7 @@ const Hero = () => {
               className="border-none rounded-xs font-sans font-bold flex gap-2 tracking-wide items-center justify-center my-8 py-2.5 px-5 cursor-pointer bg-[#006eff] text-white active:scale-[0.98] hover:bg-white hover:text-[#020023] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               aria-label="Schedule a Call"
             >
-              Schedule a Call <i class="ri-phone-fill"></i>
+              Schedule a Call <i className="ri-phone-fill"></i>
             </Link>
       </div>
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex justify-center items-center w-full pointer-events-none z-10">
