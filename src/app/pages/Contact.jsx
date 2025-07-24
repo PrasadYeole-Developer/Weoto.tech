@@ -233,7 +233,7 @@ const Contact = () => {
       </section>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7499.62238540614!2d73.806194!3d19.974441!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb4b70922d3b%3A0xeb2c3d42950e4216!2sWeoto%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1753088924760!5m2!1sen!2sin"
-        className="border-0 w-full h-[30vh] md:h-[40vh] lg:h-[60vh]"
+        className="border-0 w-full h-[30vh] md:h-[40vh] lg:h-[50vh]"
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
