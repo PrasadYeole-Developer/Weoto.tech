@@ -96,25 +96,28 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               {[
                 {
-                  label: "Custom Software Development",
-                  href: "/services/custom-software",
-                },
-                {
                   label: "B2B eCommerce Applications",
                   href: "/services/b2b-ecommerce",
                 },
                 {
-                  label: "Supply Chain Management Solutions",
-                  href: "/services/supply-chain",
+                  label: "Custom Software Development",
+                  href: "/services/custom-software",
                 },
-                { label: "SaaS & ERP Platforms", href: "/services/saas-erp" },
                 {
                   label: "Mobile App Development",
                   href: "/services/mobile-app",
                 },
                 {
+                  label: "SaaS & ERP Platforms",
+                  href: "/services/saas-erp",
+                },
+                {
                   label: "Cloud & DevOps Services",
                   href: "/services/cloud-devops",
+                },
+                {
+                  label: "Supply Chain Management Solutions",
+                  href: "/services/supply-chain",
                 },
               ].map(({ label, href }) => (
                 <li key={label}>

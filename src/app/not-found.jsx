@@ -5,17 +5,15 @@ import { motion } from "framer-motion";
 export default function NotFoundPage() {
   const router = useRouter();
 
-  // Parent variant with stagger
   const container = {
     hidden: {},
     show: {
       transition: {
-        staggerChildren: 0.2, // delay between each child
+        staggerChildren: 0.2,
       },
     },
   };
 
-  // Child animation variant
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
