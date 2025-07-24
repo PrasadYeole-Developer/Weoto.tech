@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import useLenisScroll from "@/app/components/useLenisScroll";
+import { motion } from "framer-motion";
 
 const AngularIcon = () => (
   <svg
@@ -758,9 +759,12 @@ const TechStack = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {cat.items.map((item) => (
-                    <div
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 1 }}
                       key={item.name}
-                      className="bg-white text-[#020023] rounded shadow-sm hover:shadow-md p-6 flex flex-col gap-6 border border-white/10 group transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1"
+                      className="bg-white/90 opacity-0 text-[#020023] rounded shadow-sm hover:shadow-md p-6 flex flex-col gap-6 border border-white/10 group transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1"
                     >
                       <span className="font-semibold text-xl text-[#020023] flex items-center">
                         {iconMap[item.name]}
@@ -769,7 +773,7 @@ const TechStack = () => {
                       <span className="text-[#020023]/80 text-sm leading-relaxed font-sans">
                         {item.desc}
                       </span>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
               </div>
