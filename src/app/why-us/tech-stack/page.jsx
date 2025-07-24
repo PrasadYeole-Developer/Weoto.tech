@@ -142,7 +142,7 @@ const ExpressIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 128 128"
   >
@@ -354,7 +354,7 @@ const DynamodbIcon = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <rect width="256" height="256" rx="40" fill="#4053D6" />
+    <rect width="256" height="256" rx="40" fill="#1C5C9D" />
     <rect x="56" y="80" width="144" height="32" rx="8" fill="#fff" />
     <rect x="56" y="120" width="144" height="32" rx="8" fill="#fff" />
     <rect x="56" y="160" width="144" height="32" rx="8" fill="#fff" />
@@ -380,14 +380,13 @@ const OrdercloudIcon = () => (
   <svg
     width="40"
     height="40"
-    viewBox="0 0 256 256"
-    className="mr-3 flex-shrink-0"
-    fill="none"
+    viewBox="0 0 400 400"
     xmlns="http://www.w3.org/2000/svg"
+    className="mr-3 flex-shrink-0"
   >
-    <circle cx="128" cy="128" r="120" fill="#1A82E2" />
-    <circle cx="128" cy="128" r="80" fill="#fff" />
-    <circle cx="128" cy="128" r="40" fill="#1A82E2" />
+    <polygon points="10,100 200,210 200,390 10,280" fill="#10A1A6" />
+    <polygon points="200,210 390,100 390,280 200,390" fill="#85D1D2" />
+    <polygon points="200,10 200,210 120,165 120,75" fill="#10A1A6" />
   </svg>
 );
 
@@ -395,21 +394,31 @@ const ShopifyIcon = () => (
   <svg
     width="40"
     height="40"
-    viewBox="0 0 256 256"
+    viewBox="0 0 512 512"
     className="mr-3 flex-shrink-0"
-    fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <rect width="256" height="256" rx="40" fill="#95BF47" />
-    <path d="M80 200L128 56L176 200H80Z" fill="#fff" />
-    <ellipse cx="128" cy="160" rx="24" ry="16" fill="#95BF47" />
+    <g>
+      <path
+        d="M425.6 96.1c-1.1-8.1-8.1-8.7-8.1-8.7l-61.2-6.1-45.2-44.7c-3.6-3.6-8.7-2.5-8.7-2.5l-27.2 8.7c-1.1-3.6-3.6-7.2-7.2-8.7-4.7-2.5-10.8-1.1-14.4 3.6-2.5 3.6-5.8 10.8-8.7 19.5-2.5 7.2-4.7 15.6-6.1 22.8l-70.8 22.8c-7.2 2.5-8.7 8.7-8.7 8.7L31.7 456.2c-1.1 7.2 6.1 8.7 6.1 8.7l282.6 46.3c7.2 1.1 8.7-6.1 8.7-6.1l96.1-400.2c.1-.1.1-7.3-.6-8.8z"
+        fill="#95BF47"
+      />
+      <path
+        d="M425.6 96.1c-1.1-8.1-8.1-8.7-8.1-8.7l-61.2-6.1-45.2-44.7c-3.6-3.6-8.7-2.5-8.7-2.5l-27.2 8.7c-1.1-3.6-3.6-7.2-7.2-8.7-4.7-2.5-10.8-1.1-14.4 3.6-2.5 3.6-5.8 10.8-8.7 19.5-2.5 7.2-4.7 15.6-6.1 22.8l-70.8 22.8c-7.2 2.5-8.7 8.7-8.7 8.7L31.7 456.2c-1.1 7.2 6.1 8.7 6.1 8.7l282.6 46.3c7.2 1.1 8.7-6.1 8.7-6.1l96.1-400.2c.1-.1.1-7.3-.6-8.8z"
+        fill="#95BF47"
+      />
+      <path
+        d="M320.2 511.2c.7 0 1.3-.1 1.9-.2l158.1-32.2c7.2-1.1 6.1-8.7 6.1-8.7l-60.1-372.1c-1.1-7.2-8.7-8.7-8.7-8.7l-61.2-6.1-36.2 428.1z"
+        fill="#5E8E3E"
+      />
+    </g>
   </svg>
 );
 
 const AwsIcon = () => (
   <svg
     width="40"
-    height="40"
+    height="38"
     className="mr-4 flex-shrink-0"
     viewBox="0 0 128 128"
     xmlns="http://www.w3.org/2000/svg"
@@ -540,20 +549,23 @@ const EthereumIcon = () => (
     width="40"
     height="40"
     className="mr-3 flex-shrink-0"
-    viewBox="0 0 256 256"
+    viewBox="0 0 256 417"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <polygon fill="#627EEA" points="128,24 208,128 128,232 48,128" />
-    <polygon fill="#fff" points="128,56 176,128 128,200 80,128" />
+    <polygon points="128,8 8,215 128,287" fill="#8C8C8C" />
+    <polygon points="128,8 248,215 128,287" fill="#343434" />
+    <polygon points="128,306 8,239 128,409" fill="#8C8C8C" />
+    <polygon points="128,409 248,239 128,306" fill="#343434" />
+    <polygon points="8,215 128,287 248,215 128,215" fill="#141414" />
   </svg>
 );
 
 const SolidityIcon = () => (
   <svg
     width="40"
-    height="40"
-    className="mr-3 flex-shrink-0"
+    height="32"
+    className="mr-2 flex-shrink-0"
     viewBox="0 0 128 128"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -741,14 +753,14 @@ const TechStack = () => {
           <div className="flex flex-col gap-10">
             {techStackData.map((cat) => (
               <div key={cat.category}>
-                <h2 className="text-xl md:text-2xl uppercase font-semibold text-[##020023] mb-4">
+                <h2 className="text-xl md:text-2xl uppercase font-semibold text-[#020023] mb-4 tracking-wider">
                   {cat.category}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {cat.items.map((item) => (
                     <div
                       key={item.name}
-                      className="bg-white text-[#020023] rounded shadow-sm hover:shadow-md p-6 flex flex-col gap-4 border border-white/10 group transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1"
+                      className="bg-white text-[#020023] rounded shadow-sm hover:shadow-md p-6 flex flex-col gap-6 border border-white/10 group transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1"
                     >
                       <span className="font-semibold text-xl text-[#020023] flex items-center">
                         {iconMap[item.name]}
