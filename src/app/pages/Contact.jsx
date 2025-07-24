@@ -220,7 +220,7 @@ const Contact = () => {
           <div className="flex w-full mt-2">
             <button
               type="submit"
-              className="border rounded-xs border-[#020023] font-black flex gap-2 items-center justify-center py-2.5 px-5 cursor-pointer bg-[#020023] text-white active:scale-[0.98] hover:bg-white hover:text-[#020023] transition-all duration-300 uppercase disabled:opacity-50 disabled:cursor-not-allowed"
+              className="border rounded-xs border-[#020023] font-sans font-semibold flex gap-2 items-center justify-center py-2.5 px-5 cursor-pointer bg-[#020023] text-white active:scale-[0.98] hover:bg-white hover:text-[#020023] transition-all duration-300 uppercase disabled:opacity-50 disabled:cursor-not-allowed"
               aria-label="Send Message"
             >
               Send Message <i className="ri-send-plane-fill text-lg"></i>
