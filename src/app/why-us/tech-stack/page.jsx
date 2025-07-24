@@ -758,7 +758,7 @@ const TechStack = () => {
                   {cat.category}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {cat.items.map((item) => (
+                  {cat.items.map((item, index) => (
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
