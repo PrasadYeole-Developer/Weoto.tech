@@ -760,9 +760,10 @@ const TechStack = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {cat.items.map((item) => (
                     <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 1 }}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: index * 0.1 }}
                       key={item.name}
                       className="bg-white/90 opacity-0 text-[#020023] rounded shadow-sm hover:shadow-md p-6 flex flex-col gap-6 border border-white/10 group transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1"
                     >

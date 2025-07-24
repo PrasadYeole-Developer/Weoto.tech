@@ -33,7 +33,7 @@ const Contact = () => {
         <h2 className="scroll-m-20 text-3xl md:text-4xl font-bold tracking-tight text-center mt-24 md:mt-12">
           Get in Touch
         </h2>
-        <p className="leading-6 mt-2 text-center text-base md:text-md font-medium text-gray-700 ">
+        <p className="leading-6 mt-2 text-center text-base md:text-md font-medium text-[#020023]/70">
           Have a project in mind or want to collaborate? <br />
           Reach out to us and our team will get back to you as soon as possible.
         </p>

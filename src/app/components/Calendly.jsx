@@ -8,7 +8,7 @@ const CalendlySection = () => {
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#020023] text-center mb-2">
           Schedule a Call
         </h2>
-        <p className="text-base md:text-md font-medium text-gray-700 text-center mb-8 leading-6">
+        <p className="text-base md:text-md font-medium text-[#020023]/70 text-center mb-8 leading-6">
           Book a free 1:1 call to discuss your project, idea, or collaboration.
           <br />
           Pick a time that works for you!
