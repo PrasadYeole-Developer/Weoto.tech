@@ -16,7 +16,7 @@ const Companies = () => {
         className="flex gap-24"
         animate={{ x: ["0%", "-100%"] }}
         transition={{
-          duration: 20,
+          duration: 12,
           ease: "linear",
           repeat: Infinity,
         }}
@@ -26,7 +26,7 @@ const Companies = () => {
             key={i}
             src={logo}
             alt={`logo-${i}`}
-            className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
+            className="h-8 sm:h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
           />
         ))}
         {logos.map((logo, i) => (
@@ -34,7 +34,7 @@ const Companies = () => {
             key={i}
             src={logo}
             alt={`logo-${i}`}
-            className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
+            className="h-8 sm:h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
           />
         ))}
         {logos.map((logo, i) => (
@@ -42,7 +42,7 @@ const Companies = () => {
             key={i}
             src={logo}
             alt={`logo-${i}`}
-            className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
+            className="h-8 sm:h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
           />
         ))}
       </motion.div>
