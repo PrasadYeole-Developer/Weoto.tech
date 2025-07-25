@@ -37,7 +37,7 @@ const Services = () => {
       })
       .fromTo(
         services.current,
-        { opacity: 0, yPercent: -200, duration: 0.5, ease: "expo.out" },
+        { opacity: 0, yPercent: -100, duration: 0.5, ease: "power4.out" },
         { opacity: 2, yPercent: 0 }
       );
   }, []);
@@ -99,7 +99,7 @@ const Services = () => {
         <div className="overflow-hidden">
           <h3
             ref={services}
-            className="scroll-m-20 text-4xl font-semibold tracking-tight text-center mt-24 md:mt-12 mb-6"
+            className="scroll-m-20 text-4xl font-semibold tracking-tight text-center mt-24 md:mt-12 mb-8"
           >
             Our Services
           </h3>
