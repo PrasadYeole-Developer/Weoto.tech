@@ -1,7 +1,7 @@
 import React from "react";
 
-const Testimonials = () => {
+const TestimonialsPage = () => {
   return <div>Testimonials</div>;
 };
 
-export default Testimonials;
+export default TestimonialsPage;

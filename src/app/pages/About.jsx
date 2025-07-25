@@ -28,7 +28,6 @@ const About = () => {
               help companies develop competitiveness and agility using the
               software.
               <br />
-              <br />
               Since 2017, Weoto has been delivering exceptional software
               development services. We have identified great problem solvers
               with passion and drive, and they are part of our team now. We
