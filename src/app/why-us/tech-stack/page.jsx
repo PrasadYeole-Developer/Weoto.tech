@@ -24,7 +24,7 @@ const AngularIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 128 128"
   >
@@ -52,7 +52,7 @@ const ReactIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 128 128"
   >
@@ -67,7 +67,7 @@ const NodejsIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 128 128"
   >
@@ -82,7 +82,7 @@ const PythonIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 128 128"
   >
@@ -144,7 +144,7 @@ const DjangoIcon = () => (
     version="1.0"
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     viewBox="0 0 128 128"
     xmlns="http://www.w3.org/2000/svg"
     fill="#092e20"
@@ -170,7 +170,7 @@ const AndroidIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 128 128"
   >
@@ -199,7 +199,7 @@ const IonicIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 128 128"
   >
@@ -365,7 +365,7 @@ const DynamodbIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     viewBox="0 0 256 256"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -398,7 +398,7 @@ const OrdercloudIcon = () => (
     height="40"
     viewBox="0 0 400 400"
     xmlns="http://www.w3.org/2000/svg"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
   >
     <polygon points="10,100 200,210 200,390 10,280" fill="#10A1A6" />
     <polygon points="200,210 390,100 390,280 200,390" fill="#85D1D2" />
@@ -411,7 +411,7 @@ const ShopifyIcon = () => (
     width="40"
     height="40"
     viewBox="0 0 512 512"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
   >
     <g>
@@ -434,8 +434,8 @@ const ShopifyIcon = () => (
 const AwsIcon = () => (
   <svg
     width="40"
-    height="38"
-    className="mr-4 flex-shrink-0"
+    height="40"
+    className="mr-4 mt-1 flex-shrink-0"
     viewBox="0 0 128 128"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -454,7 +454,7 @@ const JenkinsIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 128 128"
   >
@@ -533,7 +533,7 @@ const CircleciIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 128 128"
   >
@@ -548,7 +548,7 @@ const KubernetesIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 128 128"
   >
@@ -564,7 +564,7 @@ const EthereumIcon = () => (
   <svg
     width="40"
     height="40"
-    className="mr-3 flex-shrink-0"
+    className="mr-4 flex-shrink-0"
     viewBox="0 0 256 417"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -580,8 +580,8 @@ const EthereumIcon = () => (
 const SolidityIcon = () => (
   <svg
     width="40"
-    height="32"
-    className="mr-2 flex-shrink-0"
+    height="38"
+    className="mr-4 flex-shrink-0"
     viewBox="0 0 128 128"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -782,11 +782,11 @@ const TechStack = () => {
                       key={item.name}
                       className="bg-white/90 text-[#020023] rounded shadow-sm hover:shadow-md p-6 flex flex-col gap-6 border border-white/60 group transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1"
                     >
-                      <span className="font-semibold text-xl text-[#020023] flex items-center">
+                      <span className="font-bold text-xl text-[#020023] flex items-center">
                         {iconMap[item.name]}
                         {item.name}
                       </span>
-                      <span className="text-[#020023]/80 text-sm leading-relaxed font-sans">
+                      <span className="text-[#020023]/80 text-sm font-semibold leading-relaxed font-sans">
                         {item.desc}
                       </span>
                     </motion.div>

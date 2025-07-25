@@ -5,10 +5,10 @@ import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Hero from "./components/Hero";
-import Weoto from "./components/Weoto";
 import Services from "./pages/Services";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Companies from "./components/Companies";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -58,7 +58,6 @@ const Home = () => {
       <main className="w-full min-h-screen select-none">
         <Navbar />
         <Hero />
-        <Weoto />
         <Services />
         <Footer />
       </main>
