@@ -105,9 +105,9 @@ const Services = () => {
           </h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 cards">
-          {servicesData.map((service) => (
+          {servicesData.map((service, i) => (
             <div
-              key={service.title}
+              key={`${service.title}-${i}`}
               className="group transition-all duration-300 h-full flex card"
             >
               <Link

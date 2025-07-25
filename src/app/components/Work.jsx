@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useRef } from "react";
-import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
@@ -10,22 +9,6 @@ const Works = () => {
   const works = useRef();
   const worksContainer = useRef();
   useGSAP(() => {
-    gsap.utils.toArray(".card").forEach((el, i) => {
-      gsap.from(el, {
-        scrollTrigger: {
-          trigger: el,
-          start: "top 95%",
-          end: "bottom bottom",
-          scrub: true,
-        },
-        yPercent: 10,
-        opacity: 0,
-        duration: 1,
-        delay: i * 0.05,
-        ease: "back.inOut",
-      });
-    });
-
     gsap
       .timeline({
         scrollTrigger: {
@@ -94,7 +77,10 @@ const Works = () => {
   ];
 
   return (
-    <div className="w-full bg-[#020023] text-white min-h-screen" ref={worksContainer}>
+    <div
+      className="w-full bg-[#020023] text-white min-h-screen"
+      ref={worksContainer}
+    >
       <div className="container mx-auto px-4 py-12">
         <div className="overflow-hidden">
           <h3
