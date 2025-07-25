@@ -58,6 +58,7 @@ const Home = () => {
       <main className="w-full min-h-screen select-none">
         <Navbar />
         <Hero />
+        <Companies />
         <Services />
         <Footer />
       </main>
