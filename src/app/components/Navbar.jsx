@@ -351,9 +351,6 @@ const Navbar = () => {
                       <Link href="/why-us/process">Our Process</Link>
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>
-                      <Link href="/why-us/security">Security</Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
                       <Link href="/why-us/tech-stack">Tech Stack</Link>
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>

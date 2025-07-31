@@ -20,7 +20,7 @@ const Testimonials = () => {
       })
       .fromTo(
         testimonials.current,
-        { opacity: 0, yPercent: -100, duration: 0.5, ease: "power4.out" },
+        { opacity: 0, yPercent: -100, ease: "power4.out" },
         { opacity: 2, yPercent: 0 }
       );
   }, []);
