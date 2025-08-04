@@ -11,7 +11,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+} from "../../components/ui/navigation-menu";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const services = [

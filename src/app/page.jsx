@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import Companies from "./components/Companies";
 import Works from "./components/Work";
 import Testimonials from "./components/Testimonials";
+import Gallery from "./components/Gallery";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -61,6 +62,7 @@ const Home = () => {
         <Navbar />
         <Hero />
         <Companies />
+        <Gallery />
         <Works />
         <Services />
         <Testimonials />
