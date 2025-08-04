@@ -104,7 +104,8 @@ function DestinationCard({ place, idx, hoveredIndex, setHoveredIndex }) {
       onFocus={handleFocus}
       onBlur={handleBlur}
       aria-label={`${place.title}, ${place.country}, ${place.duration}, from ${place.price}`}
-      className="aspect-[3/4] overflow-hidden relative group rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-[#e54949] transition-shadow"
+      // Reduced size: smaller aspect ratio, less padding, smaller text, smaller icon
+      className="aspect-[3/4] max-w-[220px] md:max-w-[260px] overflow-hidden relative group rounded shadow-md focus:outline-none focus:ring-2 focus:ring-[#e54949] transition-shadow"
     >
       <figure className="relative w-full h-full overflow-hidden">
         <div className="relative w-full h-full">
@@ -128,28 +129,28 @@ function DestinationCard({ place, idx, hoveredIndex, setHoveredIndex }) {
           <motion.div
             variants={overlayVariants}
             animate={hoveredIndex === idx ? "hover" : "initial"}
-            className="absolute inset-0 bg-gradient-to-b from-[#1516183d] to-[#151618] z-0 pointer-events-none"
+            className="absolute inset-0 bg-gradient-to-b from-[#1516183d]/30 to-[#151618] z-0 pointer-events-none"
             transition={{ duration: 0.3 }}
           />
         </div>
 
-        <figcaption className="absolute inset-0 z-10 pointer-events-none flex flex-col justify-end gap-6 p-8 md:p-10 text-white bg-gradient-to-t from-black/40 via-black/10 to-transparent">
+        <figcaption className="absolute inset-0 z-10 pointer-events-none flex flex-col justify-end gap-3 p-4 md:p-5 text-white bg-gradient-to-t from-black/40 via-black/10 to-transparent">
           <motion.main
             variants={contentVariants}
             animate={hoveredIndex === idx ? "hover" : "initial"}
             transition={{ duration: 0.3 }}
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-2"
           >
-            <p className="uppercase text-[0.75rem] md:text-sm font-semibold tracking-wider text-[#e54949]">
+            <p className="uppercase text-[0.65rem] md:text-xs font-semibold tracking-wider text-[#e54949]">
               {place.duration}
             </p>
-            <h3 className="text-2xl md:text-[1.75rem] font-playfair font-medium leading-snug tracking-tight">
+            <h3 className="text-lg md:text-xl font-playfair font-medium leading-snug tracking-tight">
               {place.title},{" "}
               <em className="not-italic font-bold text-[#e54949]">
                 {place.country}
               </em>
             </h3>
-            <p className="text-sm md:text-base leading-relaxed text-[#f3f3f3] tracking-normal font-light">
+            <p className="text-xs md:text-xs leading-relaxed text-[#f3f3f3] tracking-normal font-light">
               {place.description}
             </p>
           </motion.main>
@@ -161,10 +162,10 @@ function DestinationCard({ place, idx, hoveredIndex, setHoveredIndex }) {
             className="flex justify-between items-center"
           >
             <div>
-              <p className="text-xs md:text-sm uppercase tracking-wide text-[#ddd] font-medium">
+              <p className="text-[0.6rem] md:text-xs uppercase tracking-wide text-[#ddd] font-medium">
                 From
               </p>
-              <p className="text-lg md:text-xl font-playfair font-semibold text-white">
+              <p className="text-base md:text-lg font-playfair font-semibold text-white">
                 {place.price}
               </p>
             </div>
@@ -173,15 +174,15 @@ function DestinationCard({ place, idx, hoveredIndex, setHoveredIndex }) {
               animate={hoveredIndex === idx ? "hover" : "initial"}
               transition={{ duration: 0.3, delay: 0.2 }}
               aria-hidden="true"
-              className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
+              className="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
+                width="28"
+                height="28"
                 fill="none"
                 viewBox="0 0 24 24"
-                className="w-10 h-10 md:w-12 md:h-12"
+                className="w-7 h-7 md:w-8 md:h-8"
               >
                 <path
                   d="M5 12h14M13 6l6 6-6 6"
@@ -204,10 +205,10 @@ export default function Gallery() {
 
   return (
     <section
-      className="bg-[#f1efec] px-4 md:px-10 py-12 md:py-20 text-[#151618] font-sans antialiased"
+      className="bg-[#f1efec] px-2 md:px-4 py-8 md:py-12 text-[#151618] font-sans antialiased"
       aria-labelledby="gallery"
     >
-      <ul className="grid gap-6 md:gap-8 md:grid-cols-2 xl:grid-cols-3 list-none p-0 m-0">
+      <ul className="grid gap-4 md:gap-6 grid-cols-2 lg:grid-cols-6 list-none p-0 m-0 justify-center">
         {destinations.map((place, idx) => (
           <DestinationCard
             key={idx}
