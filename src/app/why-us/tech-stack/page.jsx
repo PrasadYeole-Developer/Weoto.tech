@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
-import useLenisScroll from "@/app/components/useLenisScroll";
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import useLenisScroll from '../../components/useLenisScroll';
 import { motion } from "framer-motion";
 
 const fadeInUp = {

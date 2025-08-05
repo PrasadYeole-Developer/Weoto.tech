@@ -104,7 +104,6 @@ function DestinationCard({ place, idx, hoveredIndex, setHoveredIndex }) {
       onFocus={handleFocus}
       onBlur={handleBlur}
       aria-label={`${place.title}, ${place.country}, ${place.duration}, from ${place.price}`}
-      // Reduced size: smaller aspect ratio, less padding, smaller text, smaller icon
       className="aspect-[3/4] max-w-[220px] md:max-w-[260px] overflow-hidden relative group rounded shadow-md focus:outline-none focus:ring-2 focus:ring-[#e54949] transition-shadow"
     >
       <figure className="relative w-full h-full overflow-hidden">
@@ -208,12 +207,12 @@ export default function Gallery() {
       className="bg-[#f1efec] px-2 md:px-4 py-8 md:py-12 text-[#151618] font-sans antialiased"
       aria-labelledby="gallery"
     >
-      <ul className="grid gap-4 md:gap-6 grid-cols-2 lg:grid-cols-6 list-none p-0 m-0 justify-center">
+      <ul className="grid gap-4 md:gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 list-none p-0 m-0 justify-center">
         {destinations.map((place, idx) => (
           <DestinationCard
             key={idx}
             place={place}
-            idx={idx}
+            idx={idx}a
             hoveredIndex={hoveredIndex}
             setHoveredIndex={setHoveredIndex}
           />
